@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "b8e275e0-518a-4e4f-b1ca-62014c64e5a6",
+		"name": "Kalum- Enrollment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17856443"
+	},
+	"item": [
+		{
+			"name": "01-Testing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <soap:Body>\r\n    <Test xmlns=\"http://tempuri.org/\">\r\n        <s> Validando Servicio</s>\r\n    </Test>\r\n    </soap:Body>\r\n    </soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5240/EnrollmentService.asmx",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5240",
+					"path": [
+						"EnrollmentService.asmx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02-Proceso de Inscripcion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <soap:Body>\r\n    <EnrollmentProcess xmlns=\"http://tempuri.org/\">\r\n        <request>   \r\n            <NoExpediente>EXP-2022001</NoExpediente>\r\n            <Ciclo>2022</Ciclo>\r\n            <MesInicioPago>2</MesInicioPago>\r\n            <CarreraId>1C09BA62-AB82-4A11-8519-1331FF0B8A08</CarreraId>\r\n            <CargoInscripcion>1</CargoInscripcion>\r\n            <CargoCarne>1</CargoCarne>\r\n            <CargoMensualidad>1</CargoMensualidad>\r\n        </request>\r\n    </EnrollmentProcess>\r\n    </soap:Body>\r\n    </soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5240/EnrollmentService.asmx",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5240",
+					"path": [
+						"EnrollmentService.asmx"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

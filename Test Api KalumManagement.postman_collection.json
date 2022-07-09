@@ -1,0 +1,542 @@
+{
+	"info": {
+		"_postman_id": "c5f5e329-61eb-43ce-9609-376ca7a0c35b",
+		"name": "Test Api KalumManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17856443"
+	},
+	"item": [
+		{
+			"name": "CarrerasTecnicas",
+			"item": [
+				{
+					"name": "01-Busqueda Carreras",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/CarreraTecnica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarreraTecnica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02-Busqueda Carrera por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/CarreraTecnica/1C09BA62-AB82-4A11-8519-1331FF0B8A08",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarreraTecnica",
+								"1C09BA62-AB82-4A11-8519-1331FF0B8A08"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Agregar Carrera Tecnica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"CarreraId\": \"0\",\r\n \"Nombre\": \"Mecanica de Motos\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/CarreraTecnica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarreraTecnica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04-Eliminar Carrera por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/CarreraTecnica/7B4C328E-EB89-4EB3-9BFD-B027235C6C64",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarreraTecnica",
+								"7B4C328E-EB89-4EB3-9BFD-B027235C6C64"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Modificar",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ExamenAdmision",
+			"item": [
+				{
+					"name": "Examenes",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Busqueda por ID Examen",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Agregar Carrera Tecnica Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"CarreraId\": \"0\",\r\n \"Nombre\": \"Mecanica de Motos\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/ExamenAdmision",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ExamenAdmision"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04-Eliminar Carrera por ID Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/CarreraTecnica/7B4C328E-EB89-4EB3-9BFD-B027235C6C64",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarreraTecnica",
+								"7B4C328E-EB89-4EB3-9BFD-B027235C6C64"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Modificar Examen",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jornada",
+			"item": [
+				{
+					"name": "01- Jornadas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/Jornada",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Jornada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02-Busqueda por ID Jornada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/Jornada",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Jornada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Agregar Jornada",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"CarreraId\": \"0\",\r\n \"Nombre\": \"Mecanica de Motos\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/Jornada",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Jornada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04-Eliminar Jornada por ID C",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/Jornada",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Jornada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Modificar Jornada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/Jornada",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Jornada"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Alumno",
+			"item": [
+				{
+					"name": "Alumnos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/Alumno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Alumno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busqueda por ID Alumno",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Agregar Alumno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"CarreraId\": \"0\",\r\n \"Nombre\": \"Mecanica de Motos\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/CarreraTecnica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarreraTecnica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04-Eliminar Alumno",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/CarreraTecnica/7B4C328E-EB89-4EB3-9BFD-B027235C6C64",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarreraTecnica",
+								"7B4C328E-EB89-4EB3-9BFD-B027235C6C64"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Modificar Alumno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/Alumno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Alumno"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Aspirante",
+			"item": [
+				{
+					"name": "01 - Agregando un nuevo aspirante",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "02-Consultando Aspirantes",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Agregar Aspirante",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"CarreraId\": \"0\",\r\n \"Nombre\": \"Mecanica de Motos\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/CarreraTecnica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarreraTecnica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04-Eliminar Aspirante ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/CarreraTecnica/7B4C328E-EB89-4EB3-9BFD-B027235C6C64",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarreraTecnica",
+								"7B4C328E-EB89-4EB3-9BFD-B027235C6C64"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Modificar Aspirante",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inscripciones",
+			"item": [
+				{
+					"name": "01. Procesos de Inscripcion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NoExpediente\": \"EXP-2022001\",\r\n    \"Ciclo\": \"2022\",\r\n    \"MesInicioPago\": 2,\r\n    \"CarreraId\": \"1C09BA62-AB82-4A11-8519-1331FF0B8A08\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5034/v1/KalumManagement/Inscripciones/Enrollments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5034",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Inscripciones",
+								"Enrollments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
